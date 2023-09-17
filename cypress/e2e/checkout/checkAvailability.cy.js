@@ -13,7 +13,7 @@ context('Availability Search scenarios', () => {
   })
 
 
-  it.skip('Find a room in 2 weeks for 2 days, 2 adults', () => {
+  it('Find a room in 2 weeks for 2 days, 2 adults', () => {
     let checkInDate = cy.helper.getCalendarDateFromToday(14)
     let checkOutDate = cy.helper.getCalendarDateFromToday(16)
     cy.get('#check-in-input').type(checkInDate)
