@@ -10,6 +10,7 @@
 
 ## Input and assumptions 
 - since there are only two pages and one of those has a single verification action, there’s no need to show off with Page Object pattern. Although they'll become very useful as the framework grows
+- for now, working with regular tests, not gherkin BDD scenarios
 - I'd go for TS, but going for JS to keep the assignment simple
 - for now, just a single environment config
 - intentionally using an outdated cypress version to keep current allure reporter
