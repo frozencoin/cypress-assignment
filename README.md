@@ -15,3 +15,4 @@
 - for now, just a single environment config
 - intentionally using an outdated cypress version to keep current allure reporter
 - since I've got zero product knowledge, I'm making some assumptions regarding the default behaviours, e.g. verifying final step results just by the url link, this can obviously be extended
+- keeping git workflow simple: single branch, simple commits
