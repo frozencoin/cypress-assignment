@@ -1,0 +1,24 @@
+{
+  "name": "cypress-assignment",
+  "version": "1.0.0",
+  "description": "Cypress test automation assignment",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frozencoin/cypress-assignment"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "cy:run-report": "npm run allure:clear && cypress run --env allure=true",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "npm run allure:generate && allure open"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "~2.40.0",
+    "allure-commandline": "~2.24.0",
+    "cypress": "12.14.0",
+    "dayjs": "~1.11.9"
+  }
+}
